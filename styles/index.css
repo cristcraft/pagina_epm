@@ -1,0 +1,24 @@
+:root{
+    --dark: #1B2A37;
+    --gray: #ADC4D7;
+    --light-gray: #D6E1EB;
+    --pink: #DCC5C3;
+}
+
+.clientes{
+    background-color: var(--light-gray);
+    padding: 20px;
+}
+
+.clientes h2{
+    text-align: center;
+    color: var(--dark) ;
+    font-size: 40px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: 10px auto;
+}
