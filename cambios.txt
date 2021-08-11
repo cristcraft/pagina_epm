@@ -1,0 +1,3 @@
+En esta rama es donde se realizaran todos los cambios de la pagina de forma periodica, una vez terminada la pagina se conbinara con la rama master y se dejara el proyecto finalizado
+
+NOTA: No olvidar hacer el git pull al abrir el proyecto
