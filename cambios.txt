@@ -2,3 +2,6 @@ En esta rama es donde se realizaran todos los cambios de la pagina de forma peri
 
 NOTA: No olvidar hacer el git pull al abrir el proyecto, y corregir los errores que se puedan presentar
 
+cambios 2.0:
+Se crearon y agregaron las paginas contactenos y sobre nosotros, ademas se le hicieron mejoras al footer y al nav
+

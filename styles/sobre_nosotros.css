@@ -1,0 +1,103 @@
+:root{
+    --dark: #1B2A37;
+    --gray: #ADC4D7;
+    --light-gray: #D6E1EB;
+    --pink: #DCC5C3;
+}
+.content{
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light-gray);
+}
+
+.card{
+    width: 50%;
+    min-height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/emp-descripcion.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid var(--gray);
+    /*border-radius: 100%;*/
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px;
+}
+.card-img{
+    width: 50%;
+}
+
+.card-img img{
+    width: 50%;
+    border: 5px solid var(--gray);
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: var(--light-gray);
+}
+.card-text .title{
+    font-size: 50px;
+    transform: translateY(50px);
+    transition: .5s ease-in-out;
+}
+.card-text .description{
+    font-size: 20px;
+    transform: translateY(300px);
+    transition: .5s ease-in-out;
+}
+
+/*Mover cards para los lados*/
+.emp{
+    transform: translateX(-200px);
+}
+.mision{
+    transform: translateX(200px);
+}
+.vision{
+    transform: translateX(-200px);
+}
+
+/*HOVERS*/
+.card:hover .card-text > .title{
+    transform: translateY(0%);
+    transition: .5s ease-in-out;
+    -webkit-animation: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.card:hover .card-text > .description{
+    transform: translateY(0%);
+    transition: 1s ease-in-out;
+    -webkit-animation: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/*Responsive*/
+@media screen and (max-width:800px){
+    .emp, .mision, .vision{
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width:425px){
+    .card{
+        width: 90%;
+    }
+}

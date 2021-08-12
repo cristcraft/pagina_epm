@@ -1,8 +1,14 @@
 const body = document.querySelector('.body')
 const iconMenu  = document.querySelector('.icon-menu')
 const menu = document.querySelector('.menu')
-console.log(iconMenu, menu)
+const sedeBtn = document.querySelector('.sedesBtn')
+console.log(sedeBtn)
+const listaSedes = document.querySelector('.listaSedes')
+
+
 iconMenu.addEventListener('click', mostrarMenu)
+sedeBtn.addEventListener('click', mostrarSedes)
+
 
 function mostrarMenu(){
     if(menu.id === 'active'){
@@ -19,4 +25,12 @@ function mostrarMenu(){
         iconMenu.style.transition = '.5s ease-in-out '
     }
     
+}
+
+function mostrarSedes(){
+    if(listaSedes.id === 'active'){
+        listaSedes.id = 'no-Active'
+    }else{
+        listaSedes.id = 'active'
+    }
 }
